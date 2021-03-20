@@ -1,39 +1,6 @@
-# Consulting Associate-2021-Online-Coding-Assessment
+READ ME by Sherry Shuer DONG
 
-Please read through below instructions before starting the assessment. You will be given **2-hour** (20 Mar 2021 (Saturday) at 9:00 a.m. - 11:00 a.m. (HK Time)) for completing the assessment.
-
-
-## 1. Software Requirements
-- NPM version 6.14.4 above (Package Manager)
-- Node JS version 10.19.0 above (Runtime Environment)
-- Windows 10 OS, or Mac OS with version 10.14 or later
-
-## 2. Setup
-### 2.1 Before Start
-Download the source code in this repository and run below command under the root directory to install the dependency.
-
-```
-npm install
-```
-
-### 2.2 Backend Application
-
-server.js is the entry point the backend application, other backend related coding logic is placed under folder `server/`
-
-Start the backend application with the command below.
-```
-node server.js
-```
-
-### 2.3 Frontend Application
-
-All the frontend coding logic is placed under the folder `src/`
-
-Start the frontend application in development mode with the command below
-```
-npm run start
-```
-Goto http://localhost:3000/ through web browser, you should see a store website now.
+I failed to connect the database with 'Permision Denied in Mac OS' Changing the permission in Finder not work either.
 
 ### 2.4 Database
 
@@ -68,17 +35,27 @@ Imagine that you are a technology consultant, and you are working on a demo of a
 
 1. Since the client has recently decided to re-brand its company, please help change the store name from "IBM Shop" to "International Online Mall" (Suggested time: 5 Minutes)
 
+Finish
+
 2. It is found that some obsoleted products are displayed on the home page unexpectedly. You have to
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1. Client would like to perform an **one-off** clean-up action to remove some obsoleted products on home page, but at the same time keep the obsoleted product data in the product table for future reference. Please help update the database schema to add a column to support mark obsoleted. (Suggested time: 10 Minutes)
 
+I edited the Dao file in coressponsing product folder.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.2 Mark product data in database which fulfills the following criteria as **OBSOLETED**, and also update the server API SQL query to return non-obsoleted product only. (Suggested time: 15 Minutes)
+
+I cannot get the Database name sql connected. However, purpose to add a new API query in SQL for SELECT and return the data.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - A product will be treated as **OBSOLETED** when the `type` is **B** and `price` is higher than **$20** at this moment.
 
 3. Partner would like you to integrate the membership listing page with server data through API (Note that only listing feature is required. Add-to-cart or purchase feature of membership are not needed). The API should support filtering by `grade`. (Suggested time: 30 Minutes)
 
+Purpose to add a new API query in SQL for SELECT and return the data. I edited the server JS.
+
 4. Your team lead reported an issue on shopping cart page (http://localhost:3000/cart). The behaviour is not expected when adding two exact same products into the shopping cart. You have a gut feeling that this is caused by backend server-side issue(s). Please investigate and fix it. (Suggested time: 45 Minutes)
+
+Edit the server JS, and check for repitation data in SQL Database.
 
 5. Short essay: Please provide comments on the UI/UX of this website. Any suggestions to improve its UI/UX? Please submit the answer in the Google form below.
 
